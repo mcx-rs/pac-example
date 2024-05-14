@@ -1,0 +1,14 @@
+[package]
+name = "pac-examples"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+mcx-pac = { path = "../mcx-pac", features = ["rt", "mcxn947"] }
+cortex-m-rt = { version = "0.7", features = ["device"] }
+cortex-m = "0.7"
+panic-halt = "0.2.0"
+
+[[bin]]
+name = "blink"
+path = "src/blink.rs"
